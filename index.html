@@ -1,0 +1,1737 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>أثر | حماية البيانات الشخصية</title>
+
+    <meta
+        name="description"
+        content="أثر نموذج أكاديمي لحماية البيانات الشخصية عبر اكتشاف البيانات، إخفاء القيم، التحقق من صلاحية الوصول حسب مجال الملف، وتوثيق قرار الحماية."
+    >
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     الشريط العلوي
+========================================= -->
+
+<header class="navbar">
+
+    <a
+        href="index.html"
+        class="brand"
+    >
+        <img
+            src="Pic/athar-logo.png"
+            alt="شعار أثر"
+        >
+    </a>
+
+
+    <nav class="nav-links">
+
+        <a href="about.html">
+            عن أثر
+        </a>
+
+        <div class="nav-dropdown">
+
+            <a
+                href="index.html"
+                class="active dropdown-toggle"
+            >
+                الرئيسية
+                <span>⌄</span>
+            </a>
+
+            <div class="dropdown-menu">
+
+                <a href="index.html">
+                    نظرة عامة
+                </a>
+
+                <a href="#personal-data">
+                    ما هي البيانات الشخصية؟
+                </a>
+
+                <a href="#data-protection-laws">
+                   كيف تُحمى البيانات الشخصية؟
+                </a>
+
+                <a href="#about">
+                    دور أثر
+                </a>
+
+                <a href="#protection">
+                    كيف يحمي أثر البيانات؟
+                </a>
+<a href="#real-cases">
+                    حالات واقعية وغرامات
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="nav-dropdown">
+
+            <a
+                href="#services"
+                class="dropdown-toggle"
+            >
+                الخدمات
+                <span>⌄</span>
+            </a>
+
+            <div class="dropdown-menu">
+
+                <a href="dashboard.html">
+                    حماية البيانات الشخصية
+                </a>
+
+                <a href="access-analysis.html">
+                    تحليل سجلات الوصول
+                </a>
+
+                <a href="reviews.html">
+                    سجل الحماية
+                </a>
+
+                <a href="breach-report.html">
+                    بلاغات الحوادث
+                </a>
+
+            </div>
+
+        </div>
+
+        <a href="#contact">
+            تواصل معنا
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<main>
+
+
+    <!-- =========================================
+         HERO
+    ========================================== -->
+
+    <section class="hero">
+
+
+        <div class="hero-content">
+
+            <span class="hero-label">
+                حماية البيانات الشخصية قبل إتاحتها
+            </span>
+
+
+            <h1>
+                كل وصول يترك
+                <span>أثرًا.</span>
+            </h1>
+
+
+            <p>
+                يساعد أثر على حماية البيانات الشخصية من الوصول أو الاستخدام غير المصرح به.
+                يبدأ بفحص ملف البيانات واكتشاف الحقول الشخصية، ثم يحدد مجال الملف،
+                ويطبق التصنيف والصلاحيات والغرض من الوصول قبل إتاحة البيانات للمستخدم.
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a
+                    href="dashboard.html"
+                    class="primary-btn"
+                >
+                    بدء حماية البيانات الشخصية
+                </a>
+</div>
+
+        </div>
+
+
+
+        <div class="hero-preview">
+
+            <div class="preview-card">
+
+
+                <div class="preview-header">
+
+                    <span>
+                        قرار حماية
+                    </span>
+
+                    <span class="status">
+                        ● فحص قبل الإتاحة
+                    </span>
+
+                </div>
+
+
+
+                <div class="alert-box">
+
+                    <div class="alert-icon">
+                        ◐
+                    </div>
+
+                    <div>
+
+                        <small>
+                            ملف صحي — طلب عرض مصرح
+                        </small>
+
+                        <h3>
+                            مسموح مع إخفاء جزئي
+                        </h3>
+
+                        <p>
+                            المستخدم من المجال الصحي ومخول بالعرض؛
+                            لذلك سمح أثر بالوصول مع إخفاء القيم الشخصية غير اللازمة.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="stats">
+
+                    <div class="stat">
+                        <span>مجال الملف</span>
+                        <strong>صحي</strong>
+                        <small>تم التعرف على المجال</small>
+                    </div>
+
+                    <div class="stat">
+                        <span>العملية</span>
+                        <strong>عرض</strong>
+                        <small>ضمن الصلاحية</small>
+                    </div>
+
+                    <div class="stat">
+                        <span>قرار أثر</span>
+                        <strong>إخفاء</strong>
+                        <small>تقليل كشف البيانات</small>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <!-- =========================================
+         ما هي البيانات الشخصية؟
+    ========================================== -->
+
+    <section
+        class="about"
+        id="personal-data"
+    >
+
+        <div class="about-layout">
+
+
+            <div class="about-text">
+
+                <span class="section-label">
+                    أولًا: ما الذي نحميه؟
+                </span>
+
+                <h2>
+                    ما هي البيانات الشخصية؟
+                </h2>
+
+                <p>
+                    البيانات الشخصية هي أي معلومات ترتبط بفرد ويمكن أن تؤدي
+                    إلى التعرف عليه بشكل مباشر أو غير مباشر. وقد تكون بيانات
+                    تعريفية أو بيانات تواصل أو معلومات مالية أو صحية أو تعليمية
+                    أو غيرها من المعلومات المرتبطة بالشخص.
+                </p>
+
+                <p>
+                    لذلك لا يقتصر أثر على البحث عن الاسم فقط؛ بل يفحص الملف
+                    لاكتشاف الحقول التي قد تكشف هوية الشخص أو معلومات مرتبطة به،
+                    ثم يطبق عليها الحماية المناسبة قبل إتاحتها.
+                </p>
+
+            </div>
+
+
+            <div class="logo-meaning goals-card">
+
+                <div>
+
+                    <span class="section-label">
+                        أمثلة على البيانات الشخصية
+                    </span>
+
+
+                    <div class="athar-goals">
+
+
+                        <div class="athar-goal">
+
+                            <span class="goal-icon">
+                                01
+                            </span>
+
+                            <div>
+                                <strong>
+                                    بيانات تعريف وتواصل
+                                </strong>
+
+                                <small>
+                                    الاسم، رقم الهوية، رقم الجوال، البريد الإلكتروني.
+                                </small>
+                            </div>
+
+                        </div>
+
+
+                        <div class="athar-goal">
+
+                            <span class="goal-icon">
+                                02
+                            </span>
+
+                            <div>
+                                <strong>
+                                    بيانات مالية وصحية
+                                </strong>
+
+                                <small>
+                                    الحسابات والأرصدة والدخل، والمعلومات الصحية المرتبطة بالفرد.
+                                </small>
+                            </div>
+
+                        </div>
+
+
+                        <div class="athar-goal">
+
+                            <span class="goal-icon">
+                                03
+                            </span>
+
+                            <div>
+                                <strong>
+                                    بيانات تعليمية ومكانية
+                                </strong>
+
+                                <small>
+                                    التخصص والمعدل والحالة الأكاديمية، وبيانات الموقع المرتبطة بالشخص.
+                                </small>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>    <!-- =========================================
+         الحماية النظامية في السعودية وأوروبا
+    ========================================== -->
+<!-- =========================================
+     الحماية النظامية في السعودية وأوروبا
+========================================== -->
+
+<section
+    class="legal-framework"
+    id="data-protection-laws"
+>
+
+    <div class="legal-heading">
+
+        <span class="section-label">
+            ثانيًا: كيف تُحمى البيانات الشخصية؟
+        </span>
+
+        <h2>
+            حماية البيانات الشخصية
+        </h2>
+
+        <p>
+            يوضح هذا القسم بشكل مختصر أبرز ملامح حماية البيانات الشخصية
+            في الاتحاد الأوروبي والمملكة العربية السعودية.
+        </p>
+
+    </div>
+
+
+    <div class="legal-grid legal-compare-grid">
+
+
+        <!-- الاتحاد الأوروبي - يمين -->
+        <article class="legal-card legal-compare-card">
+
+            <div class="legal-card-head">
+
+                <span class="legal-number">
+                    GDPR
+                </span>
+
+                <span class="legal-full-name">
+                    General Data Protection Regulation
+                </span>
+
+            </div>
+
+            <h3>
+                الاتحاد الأوروبي
+            </h3>
+
+            <ul class="legal-points">
+
+                <li>
+                    <strong>المسمى:</strong>
+                    اللائحة العامة لحماية البيانات
+                    (General Data Protection Regulation).
+                </li>
+
+                <li>
+                    <strong>الهدف:</strong>
+                    وضع إطار موحد لمعالجة البيانات الشخصية داخل الاتحاد الأوروبي
+                    وتعزيز مساءلة الجهات المعالجة.
+                </li>
+
+                <li>
+                    <strong>يركز على:</strong>
+                    الشفافية، تقليل البيانات، الأمان،
+                    وتنظيم كيفية جمع البيانات الشخصية واستخدامها.
+                </li>
+
+                <li>
+                    <strong>حقوق الأفراد:</strong>
+                    الوصول، التصحيح، المحو، الاعتراض،
+                    وتسهيل نقل البيانات في حالات محددة.
+                </li>
+
+            </ul>
+
+            <a
+                class="service-button"
+                href="https://commission.europa.eu/law/law-topic/data-protection/legal-framework-eu-data-protection_en"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                المصدر الرسمي للإطار الأوروبي
+            </a>
+
+        </article>
+
+
+        <!-- السعودية - يسار -->
+        <article class="legal-card legal-compare-card">
+
+            <div class="legal-card-head">
+
+                <span class="legal-number">
+                    PDPL
+                </span>
+
+                <span class="legal-full-name">
+                    Personal Data Protection Law
+                </span>
+
+            </div>
+
+            <h3>
+                المملكة العربية السعودية
+            </h3>
+
+            <ul class="legal-points">
+
+                <li>
+                    <strong>المسمى:</strong>
+                    نظام حماية البيانات الشخصية
+                    (Personal Data Protection Law).
+                </li>
+
+                <li>
+                    <strong>الهدف:</strong>
+                    تنظيم جمع البيانات الشخصية ومعالجتها والإفصاح عنها
+                    بما يحفظ حقوق أصحاب البيانات.
+                </li>
+
+                <li>
+                    <strong>يركز على:</strong>
+                    تحديد الغرض من المعالجة، الحد من الاستخدام غير المصرح،
+                    والالتزام بحماية البيانات طوال دورة حياتها.
+                </li>
+
+                <li>
+                    <strong>حقوق الأفراد:</strong>
+                    العلم بالمعالجة، طلب الوصول، طلب التصحيح،
+                    وطلب إتلاف البيانات في الحالات النظامية.
+                </li>
+
+            </ul>
+
+            <a
+                class="service-button"
+                href="https://dgp.sdaia.gov.sa/wps/portal/pdp/knowledgecenter/details/PDPL"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                المصدر الرسمي للنظام السعودي
+            </a>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+    <!-- =========================================
+         عن أثر
+    ========================================== -->
+
+    <section
+        class="about"
+        id="about"
+    >
+
+        <div class="about-layout">
+
+
+            <div class="about-text">
+
+                <span class="section-label">
+                    ثالثًا: دور أثر
+                </span>
+
+                <h2>
+                    بوابة لحماية البيانات الشخصية قبل الوصول إليها
+                </h2>
+
+                <p>
+                    لا يعتمد أثر على معرفة نوع البيانات من اختيار المستخدم فقط.
+                    يقرأ ملف CSV المرفوع داخل المتصفح، ويكتشف الحقول التي يحتمل أن تحتوي
+                    على بيانات شخصية، ثم يحدد مجال الملف مثل البيانات الصحية أو بيانات
+                    الموظفين أو البيانات المالية أو التعليمية، ويستخدم هذا المجال
+                    للتحقق من أهلية الجهة الطالبة للوصول.
+                </p>
+
+            </div>
+
+
+
+            <div class="logo-meaning goals-card">
+
+                <div>
+
+                    <span class="section-label">
+                        هدف الحماية
+                    </span>
+
+
+                    <div class="athar-goals">
+
+
+                        <div class="athar-goal">
+
+                            <span class="goal-icon">
+                                01
+                            </span>
+
+                            <div>
+                                <strong>
+                                    منع الوصول غير المصرح
+                                </strong>
+
+                                <small>
+                                    لا يُسمح للجهة بالوصول إلى ملف خارج مجالها الوظيفي.
+                                </small>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="athar-goal">
+
+                            <span class="goal-icon">
+                                02
+                            </span>
+
+                            <div>
+                                <strong>
+                                    تقليل كشف البيانات
+                                </strong>
+
+                                <small>
+                                    إخفاء أجزاء من الهوية والجوال والبريد والقيم الشخصية عند العرض.
+                                </small>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="athar-goal">
+
+                            <span class="goal-icon">
+                                03
+                            </span>
+
+                            <div>
+                                <strong>
+                                    توثيق قرار الحماية
+                                </strong>
+
+                                <small>
+                                    تسجيل قرار الوصول وأسبابه للمراجعة اللاحقة.
+                                </small>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         كيف يحمي أثر البيانات؟
+    ========================================== -->
+
+    <section
+        class="legal-framework"
+        id="protection"
+    >
+
+        <div class="legal-heading">
+
+            <span class="section-label">
+                رابعًا: كيف تتم الحماية؟
+            </span>
+
+            <h2>
+                الحماية تبدأ من معرفة البيانات وتنتهي بقرار الوصول
+            </h2>
+
+            <p>
+                كل مرحلة في الخدمة مرتبطة مباشرة بمنع كشف البيانات الشخصية
+                أو استخدامها خارج الصلاحية والغرض المحدد.
+            </p>
+
+        </div>
+
+
+
+        <div class="legal-grid protection-grid-home">
+
+
+            <article class="legal-card">
+
+                <span class="legal-number">
+                    01
+                </span>
+
+                <h3>
+                    اكتشاف البيانات الشخصية
+                </h3>
+
+                <p>
+                    يفحص أثر أسماء الأعمدة وأنماط القيم لاكتشاف الحقول
+                    التي قد تحتوي على بيانات شخصية مثل الاسم والهوية والجوال
+                    والبريد والبيانات الصحية والمالية.
+                </p>
+
+                <div class="legal-penalty">
+                    <strong>الحماية:</strong>
+                    معرفة مواضع البيانات الشخصية قبل إتاحتها.
+                </div>
+
+            </article>
+
+
+
+            <article class="legal-card">
+
+                <span class="legal-number">
+                    02
+                </span>
+
+                <h3>
+                    إخفاء القيم الشخصية
+                </h3>
+
+                <p>
+                    لا تعرض المعاينة القيم الشخصية بشكل كامل؛
+                    فيظهر فقط الحد اللازم من الاسم أو الهوية أو الجوال أو البريد،
+                    وتُخفى القيم التي لا يلزم كشفها.
+                </p>
+
+                <div class="legal-penalty">
+                    <strong>الحماية:</strong>
+                    تقليل كشف البيانات حتى عند السماح بالعرض.
+                </div>
+
+            </article>
+
+
+
+            <article class="legal-card">
+
+                <span class="legal-number">
+                    03
+                </span>
+
+                <h3>
+                    التحقق من مجال الوصول
+                </h3>
+
+                <p>
+                    يحدد أثر مجال الملف أولًا، ثم يتحقق من أن الإدارة والنظام
+                    المستخدمين مرتبطان بهذا المجال قبل فحص العملية والغرض.
+                </p>
+
+                <div class="legal-penalty">
+                    <strong>مثال:</strong>
+                    ملف مرضى لا يُتاح لإدارة لا تعمل ضمن المجال الصحي.
+                </div>
+
+            </article>
+
+
+
+            <article class="legal-card">
+
+                <span class="legal-number">
+                    04
+                </span>
+
+                <h3>
+                    قرار الحماية
+                </h3>
+
+                <p>
+                    بناءً على المجال والتصنيف والصلاحية والغرض والعملية،
+                    تكون النتيجة: مسموح، أو مسموح مع إخفاء، أو يحتاج موافقة،
+                    أو مرفوض.
+                </p>
+
+                <div class="legal-penalty">
+                    <strong>الحماية:</strong>
+                    عدم إتاحة البيانات قبل اكتمال فحص الوصول.
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+<!-- =========================================
+     حالات واقعية في حماية البيانات الشخصية
+========================================== -->
+
+<section class="real-cases" id="real-cases">
+
+    <div class="real-cases-header">
+
+        <span class="section-label">
+            حالات واقعية في حماية البيانات الشخصية
+        </span>
+
+        <h2>
+            مخالفات في حماية البيانات وما ترتب عليها
+        </h2>
+
+        <p>
+            توضح هذه الحالات كيف يمكن أن يؤدي عدم الالتزام
+            بلوائح حماية البيانات الشخصية إلى غرامات مالية كبيرة،
+            وإجراءات تصحيحية وقيود تنظيمية على معالجة البيانات.
+        </p>
+
+    </div>
+
+
+    <div class="real-cases-grid">
+
+
+        <!-- =================================
+             META
+        ================================== -->
+
+        <article class="real-case-card">
+
+            <div class="real-case-top">
+
+                <span class="real-case-tag">
+                    غرامة €1.2 مليار
+                </span>
+
+                <span class="real-case-year">
+                    2023
+                </span>
+
+            </div>
+
+            <h3>
+                Meta Ireland — أيرلندا
+            </h3>
+
+            <p class="real-case-summary">
+                خالفت Meta متطلبات GDPR المتعلقة بنقل البيانات
+                الشخصية لمستخدمي الاتحاد الأوروبي إلى الولايات المتحدة
+                دون ضمانات حماية كافية.
+            </p>
+
+
+            <div class="real-case-details">
+
+                <div>
+
+                    <strong>
+                        ما المخالفة؟
+                    </strong>
+
+                    <p>
+                        استمرار نقل البيانات الشخصية إلى الولايات المتحدة
+                        بطريقة لم تحقق متطلبات الحماية النظامية المطلوبة.
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        ما الأثر المترتب؟
+                    </strong>
+
+                    <ul class="real-case-points">
+
+                        <li>
+                            غرامة مالية قدرها 1.2 مليار يورو.
+                        </li>
+
+                        <li>
+                            أمر بتعليق عمليات نقل مستقبلية للبيانات.
+                        </li>
+
+                        <li>
+                            إلزام الشركة بتعديل عمليات المعالجة
+                            لتتوافق مع GDPR.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <a
+                    href="https://www.dataprotection.ie/en/dpc-guidance/decisions/inquiry-concerning-data-transfers-eueea-us-meta-platforms-ireland-limited-its-facebook-service"
+                    class="service-button real-case-source"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    المصدر الرسمي
+                </a>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="real-case-toggle"
+            >
+                عرض التفاصيل
+            </button>
+
+        </article>
+
+
+
+        <!-- =================================
+             TIKTOK
+        ================================== -->
+
+        <article class="real-case-card">
+
+            <div class="real-case-top">
+
+                <span class="real-case-tag">
+                    غرامة €345 مليون
+                </span>
+
+                <span class="real-case-year">
+                    2023
+                </span>
+
+            </div>
+
+            <h3>
+                TikTok — أيرلندا
+            </h3>
+
+            <p class="real-case-summary">
+                تعرضت TikTok لعقوبة بسبب مخالفات مرتبطة
+                بمعالجة البيانات الشخصية للأطفال وإعدادات الخصوصية
+                والشفافية في التعامل مع بياناتهم.
+            </p>
+
+
+            <div class="real-case-details">
+
+                <div>
+
+                    <strong>
+                        ما المخالفة؟
+                    </strong>
+
+                    <p>
+                        وجود قصور في حماية بيانات الأطفال
+                        وبعض إعدادات الحسابات ومتطلبات الشفافية
+                        المرتبطة بمعالجة البيانات الشخصية.
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        ما الأثر المترتب؟
+                    </strong>
+
+                    <ul class="real-case-points">
+
+                        <li>
+                            غرامة مالية قدرها 345 مليون يورو.
+                        </li>
+
+                        <li>
+                            إلزام الشركة بتعديل عمليات المعالجة.
+                        </li>
+
+                        <li>
+                            تشديد متطلبات حماية خصوصية حسابات الأطفال.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <a
+                    href="https://www.dataprotection.ie/en/news-media/press-releases/DPC-announces-345-million-euro-fine-of-TikTok"
+                    class="service-button real-case-source"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    المصدر الرسمي
+                </a>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="real-case-toggle"
+            >
+                عرض التفاصيل
+            </button>
+
+        </article>
+
+
+
+        <!-- =================================
+             UBER
+        ================================== -->
+
+        <article class="real-case-card">
+
+            <div class="real-case-top">
+
+                <span class="real-case-tag">
+                    غرامة €290 مليون
+                </span>
+
+                <span class="real-case-year">
+                    2024
+                </span>
+
+            </div>
+
+            <h3>
+                Uber — هولندا
+            </h3>
+
+            <p class="real-case-summary">
+                نقلت Uber بيانات شخصية لسائقين أوروبيين
+                إلى الولايات المتحدة دون تطبيق الضمانات المناسبة
+                المطلوبة بموجب GDPR.
+            </p>
+
+
+            <div class="real-case-details">
+
+                <div>
+
+                    <strong>
+                        ما المخالفة؟
+                    </strong>
+
+                    <p>
+                        نقل بيانات السائقين خارج الاتحاد الأوروبي
+                        دون توفير مستوى الحماية والضمانات النظامية المطلوبة.
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        ما الأثر المترتب؟
+                    </strong>
+
+                    <ul class="real-case-points">
+
+                        <li>
+                            غرامة مالية قدرها 290 مليون يورو.
+                        </li>
+
+                        <li>
+                            مطالبة الشركة بالالتزام بضوابط نقل البيانات.
+                        </li>
+
+                        <li>
+                            مراجعة طريقة مشاركة البيانات الشخصية
+                            بين الأنظمة والدول.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <a
+                    href="https://www.autoriteitpersoonsgegevens.nl/en/current/dutch-dpa-imposes-a-fine-of-290-million-euro-on-uber-because-of-transfers-of-drivers-data-to-the-us"
+                    class="service-button real-case-source"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    المصدر الرسمي
+                </a>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="real-case-toggle"
+            >
+                عرض التفاصيل
+            </button>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+<!-- =========================================
+     تواصل معنا
+========================================== -->
+
+<section class="contact" id="contact">
+
+    <div class="contact-card contact-card-form">
+
+        <div class="contact-heading">
+            <span class="section-label">تواصل معنا</span>
+
+            <h2>تواصل معنا بخصوص أثر</h2>
+
+            <p>
+                لديك استفسار أو ملاحظة حول أثر؟
+                أرسل رسالتك من خلال النموذج التالي.
+            </p>
+        </div>
+
+
+        <form id="contact-form" class="athar-contact-form">
+
+            <div class="contact-form-grid">
+
+                <div class="contact-field">
+                    <label for="contact-name">
+                        الاسم
+                    </label>
+
+                    <input
+                        type="text"
+                        id="contact-name"
+                        name="name"
+                        placeholder="اكتب اسمك"
+                        required
+                    >
+                </div>
+
+
+                <div class="contact-field">
+                    <label for="contact-email">
+                        البريد الإلكتروني
+                    </label>
+
+                    <input
+                        type="email"
+                        id="contact-email"
+                        name="email"
+                        placeholder="name@example.com"
+                        required
+                    >
+                </div>
+
+            </div>
+
+
+            <div class="contact-field">
+
+                <label for="contact-subject">
+                    موضوع الاستفسار
+                </label>
+
+                <input
+                    type="text"
+                    id="contact-subject"
+                    name="subject"
+                    placeholder="مثال: استفسار عن حماية البيانات"
+                    required
+                >
+
+            </div>
+
+
+            <div class="contact-field">
+
+                <label for="contact-message">
+                    الرسالة
+                </label>
+
+                <textarea
+                    id="contact-message"
+                    name="message"
+                    rows="5"
+                    placeholder="اكتب رسالتك هنا..."
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <div class="contact-actions">
+
+    <button
+        type="submit"
+        class="primary-btn contact-submit-btn"
+    >
+        تجهيز رسالة البريد
+    </button>
+
+    <a
+        href="about.html"
+        class="secondary-btn contact-about-btn"
+    >
+        عن أثر
+    </a>
+
+    <a
+        href="دليل_استخدام_أثر(1).pdf"
+        class="secondary-btn contact-guide-btn"
+        target="_blank"
+    >
+        دليل أثر
+    </a>
+
+</div>
+
+
+            <div
+                id="contact-status"
+                class="contact-status"
+                aria-live="polite"
+            ></div>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<style>
+
+/* ==========================================
+   تواصل معنا
+========================================== */
+
+.contact {
+    padding: 90px 7%;
+    background: #f8f9fd;
+}
+
+
+.contact-card-form {
+    width: min(900px, 100%);
+    margin: 0 auto;
+
+    padding: 48px;
+
+    background: #ffffff;
+
+    border: 1px solid #e6e9f2;
+    border-radius: 26px;
+
+    box-shadow:
+        0 20px 60px
+        rgba(26, 38, 74, 0.08);
+
+    text-align: right;
+}
+
+
+.contact-heading {
+    margin-bottom: 32px;
+}
+
+
+.contact-heading .section-label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #6568f0;
+
+    font-size: 14px;
+    font-weight: 800;
+}
+
+
+.contact-heading h2 {
+    margin: 0 0 10px;
+
+    color: #17233f;
+
+    font-size: 30px;
+}
+
+
+.contact-heading p {
+    margin: 0;
+
+    color: #7a8499;
+
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+
+.athar-contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.contact-form-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 18px;
+}
+
+
+.contact-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+.contact-field label {
+    color: #25324d;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+.contact-field input,
+.contact-field textarea {
+    width: 100%;
+
+    padding: 14px 16px;
+
+    background: #f9faff;
+
+    border: 1px solid #dfe4ee;
+    border-radius: 13px;
+
+    outline: none;
+
+    color: #17233f;
+
+    font-family: inherit;
+    font-size: 14px;
+
+    transition:
+        border-color .2s ease,
+        box-shadow .2s ease,
+        background .2s ease;
+
+    box-sizing: border-box;
+}
+
+
+.contact-field textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+
+.contact-field input:focus,
+.contact-field textarea:focus {
+    background: #ffffff;
+
+    border-color: #696df4;
+
+    box-shadow:
+        0 0 0 4px
+        rgba(105, 109, 244, 0.10);
+}
+
+
+.contact-actions {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 4px;
+}
+
+
+.contact-send-btn,
+.contact-about-btn {
+    min-height: 46px;
+
+    padding: 0 24px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 800;
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+    transition:
+        transform .2s ease,
+        background .2s ease;
+}
+
+
+.contact-send-btn {
+    border: 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            #5964f2,
+            #744df5
+        );
+
+    color: #ffffff;
+}
+
+
+.contact-send-btn:hover {
+    transform: translateY(-2px);
+}
+
+
+.contact-about-btn {
+    background: #f4f5fb;
+
+    border: 1px solid #e1e5ee;
+
+    color: #4f5c74;
+}
+
+
+.contact-about-btn:hover {
+    background: #eceef7;
+}
+
+
+.contact-status {
+    display: none;
+
+    padding: 15px 17px;
+
+    border-radius: 13px;
+
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+.contact-status.success {
+    display: block;
+
+    background: #f0fdf4;
+
+    border: 1px solid #bbf7d0;
+
+    color: #15803d;
+}
+
+
+.contact-status.error {
+    display: block;
+
+    background: #fff1f2;
+
+    border: 1px solid #fecdd3;
+
+    color: #be123c;
+}
+
+
+@media (max-width: 700px) {
+
+    .contact {
+        padding:
+            60px 5%;
+    }
+
+
+    .contact-card-form {
+        padding:
+            30px 20px;
+
+        border-radius: 20px;
+    }
+
+
+    .contact-heading h2 {
+        font-size: 25px;
+    }
+
+
+    .contact-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .contact-actions {
+        flex-direction: column;
+    }
+
+
+    .contact-send-btn,
+    .contact-about-btn {
+        width: 100%;
+    }
+
+}
+
+</style>
+
+
+<script>
+
+(function () {
+
+    "use strict";
+
+
+    const form =
+        document.getElementById(
+            "contact-form"
+        );
+
+
+    const status =
+        document.getElementById(
+            "contact-status"
+        );
+
+
+    if (!form || !status) {
+        return;
+    }
+
+
+    form.addEventListener(
+        "submit",
+        function (event) {
+
+            event.preventDefault();
+
+
+            const name =
+                document
+                    .getElementById(
+                        "contact-name"
+                    )
+                    .value
+                    .trim();
+
+
+            const email =
+                document
+                    .getElementById(
+                        "contact-email"
+                    )
+                    .value
+                    .trim();
+
+
+            const subject =
+                document
+                    .getElementById(
+                        "contact-subject"
+                    )
+                    .value
+                    .trim();
+
+
+            const message =
+                document
+                    .getElementById(
+                        "contact-message"
+                    )
+                    .value
+                    .trim();
+
+
+            if (
+                !name ||
+                !email ||
+                !subject ||
+                !message
+            ) {
+
+                status.className =
+                    "contact-status error";
+
+
+                status.textContent =
+                    "يرجى تعبئة جميع الحقول قبل إرسال الرسالة.";
+
+
+                return;
+            }
+
+
+            const emailPattern =
+                /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+
+            if (!emailPattern.test(email)) {
+
+                status.className =
+                    "contact-status error";
+
+
+                status.textContent =
+                    "يرجى إدخال بريد إلكتروني صحيح.";
+
+
+                return;
+            }
+
+
+            const contactMessage = {
+
+                id:
+                    "MSG-" +
+                    Date.now(),
+
+                name:
+                    name,
+
+                email:
+                    email,
+
+                subject:
+                    subject,
+
+                message:
+                    message,
+
+                createdAt:
+                    new Date()
+                        .toISOString()
+
+            };
+
+
+            try {
+
+                const oldMessages =
+                    JSON.parse(
+                        localStorage.getItem(
+                            "athar_contact_messages"
+                        ) || "[]"
+                    );
+
+
+                oldMessages.push(
+                    contactMessage
+                );
+
+
+                localStorage.setItem(
+                    "athar_contact_messages",
+                    JSON.stringify(
+                        oldMessages
+                    )
+                );
+
+
+                status.className =
+                    "contact-status success";
+
+
+                status.textContent =
+                    "تم تسجيل رسالتك بنجاح في النسخة التجريبية من أثر.";
+
+
+                form.reset();
+
+
+            } catch (error) {
+
+                status.className =
+                    "contact-status error";
+
+
+                status.textContent =
+                    "تعذر تسجيل الرسالة. حاول مرة أخرى.";
+
+            }
+
+        }
+    );
+
+})();
+
+</script>
+
+</main>
+
+
+
+<footer>
+
+    <strong>
+        أثر
+    </strong>
+
+    <p>
+        نموذج لحماية البيانات الشخصية من الوصول أو الاستخدام غير المصرح به.
+    </p>
+
+</footer>
+
+
+
+<script>
+document
+    .querySelectorAll(".real-case-toggle")
+    .forEach(function (button) {
+
+        button.addEventListener(
+            "click",
+            function () {
+
+                const card =
+                    button.closest(
+                        ".real-case-card"
+                    );
+
+                card.classList.toggle(
+                    "open"
+                );
+
+                button.textContent =
+                    card.classList.contains("open")
+                        ? "إخفاء التفاصيل"
+                        : "عرض التفاصيل";
+
+            }
+        );
+
+    });
+</script>
+</body>
+</html>

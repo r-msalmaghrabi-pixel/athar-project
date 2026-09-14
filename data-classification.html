@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        تصنيف البيانات | أثر
+    </title>
+
+    <meta
+        name="description"
+        content="عرض مستويات تصنيف البيانات المعتمدة وفق سياسة تصنيف البيانات الصادرة عن الهيئة السعودية للبيانات والذكاء الاصطناعي (سدايا)."
+    >
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+
+<body class="classification-page">
+
+
+<header class="dashboard-navbar">
+
+    <a
+        href="index.html"
+        class="dashboard-brand"
+    >
+        <img
+            src="Pic/athar-logo.png"
+            alt="شعار أثر"
+        >
+    </a>
+
+
+    <div class="dashboard-title">
+
+        <span>
+            أثر
+        </span>
+
+        <strong>
+            تصنيف البيانات
+        </strong>
+
+    </div>
+
+
+    <a
+        href="index.html"
+        class="back-home"
+    >
+        العودة إلى الرئيسية
+    </a>
+
+</header>
+
+
+
+<main class="classification-main">
+
+
+    <!-- ============================== -->
+    <!-- مقدمة الصفحة -->
+    <!-- ============================== -->
+
+    <section class="classification-heading">
+
+        <span class="section-label">
+            تصنيف البيانات وفق المرجع الوطني
+        </span>
+
+        <h1>
+            تطبيق مستوى التصنيف المعتمد قبل اتخاذ قرار الوصول
+        </h1>
+
+        <p>
+            يعتمد «أثر» على مستويات تصنيف البيانات الواردة في
+            سياسة تصنيف البيانات الصادرة ضمن سياسات حوكمة البيانات
+            الوطنية لدى الهيئة السعودية للبيانات والذكاء الاصطناعي
+            «سدايا»، ولا ينشئ مستويات تصنيف خاصة به.
+        </p>
+
+    </section>
+
+
+
+    <!-- ============================== -->
+    <!-- المرجع -->
+    <!-- ============================== -->
+
+    <section class="classification-card">
+
+        <span class="section-label">
+            المرجع
+        </span>
+
+        <h2>
+            سياسة تصنيف البيانات — سدايا
+        </h2>
+
+        <p>
+            مستويات تصنيف البيانات المعتمدة هي:
+            «سري للغاية»، «سري»، «مقيد»، و«عام».
+            ويجب أن يكون مستوى التصنيف محددًا ومعتمدًا من الجهة
+            وفق سياسة تصنيف البيانات، وليس بناءً على تقدير نظام «أثر».
+        </p>
+
+        <div class="classification-tags">
+
+            <span>
+                سري للغاية
+            </span>
+
+            <span>
+                سري
+            </span>
+
+            <span>
+                مقيد
+            </span>
+
+            <span>
+                عام
+            </span>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ============================== -->
+    <!-- مستويات التصنيف -->
+    <!-- ============================== -->
+
+    <section class="classification-card">
+
+        <span class="section-label">
+            مستويات التصنيف المعتمدة
+        </span>
+
+        <h2>
+            مستويات تصنيف البيانات في سياسة سدايا
+        </h2>
+
+        <p>
+            يعرض «أثر» المستويات المعتمدة ويستخدم المستوى الذي
+            تحدده الجهة لتشديد أو تخفيف إجراءات الوصول داخل النموذج.
+        </p>
+
+        <div
+            id="classification-grid"
+            class="classification-dynamic-grid"
+        ></div>
+
+    </section>
+
+
+
+    <!-- ============================== -->
+    <!-- تطبيق مستوى التصنيف -->
+    <!-- ============================== -->
+
+    <section class="classification-card">
+
+        <span class="section-label">
+            تطبيق التصنيف
+        </span>
+
+        <h2>
+            اختيار مستوى التصنيف المعتمد للبيانات
+        </h2>
+
+        <p>
+            اختر المستوى المسجل أو المعتمد لدى الجهة.
+            لا يقوم «أثر» بتحديد مستوى التصنيف تلقائيًا.
+        </p>
+
+
+        <div class="classification-tool">
+
+            <div class="breach-field">
+
+                <label for="classification-select">
+                    مستوى التصنيف المعتمد
+                </label>
+
+                <select id="classification-select">
+
+                    <option value="top-secret">
+                        سري للغاية
+                    </option>
+
+                    <option value="secret">
+                        سري
+                    </option>
+
+                    <option value="restricted">
+                        مقيد
+                    </option>
+
+                    <option value="public">
+                        عام
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div
+                id="classification-result"
+                class="classification-result-box"
+            ></div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ============================== -->
+    <!-- العلاقة بحماية البيانات الشخصية -->
+    <!-- ============================== -->
+
+    <section class="classification-card">
+
+        <span class="section-label">
+            حماية البيانات الشخصية
+        </span>
+
+        <h2>
+            تصنيف البيانات لا يلغي متطلبات حماية البيانات الشخصية
+        </h2>
+
+        <p>
+            مستوى تصنيف البيانات يعبّر عن مستوى السرية والقيود
+            المرتبطة بالبيانات، بينما تخضع معالجة البيانات الشخصية
+            كذلك لمتطلبات نظام حماية البيانات الشخصية واللوائح
+            والضوابط ذات العلاقة.
+        </p>
+
+        <p>
+            لذلك لا يعتبر «أثر» أن تصنيف البيانات بالمستوى «عام»
+            يسمح تلقائيًا بنشر بيانات شخصية أو إتاحتها دون تحقق
+            من الأساس النظامي والغرض والصلاحية.
+        </p>
+
+    </section>
+
+
+
+    <!-- ============================== -->
+    <!-- دور أثر -->
+    <!-- ============================== -->
+
+    <section class="classification-card">
+
+        <span class="section-label">
+            دور أثر
+        </span>
+
+        <h2>
+            استخدام التصنيف في قرار الحماية
+        </h2>
+
+        <p>
+            بعد إدخال مستوى التصنيف المعتمد، يستخدمه «أثر»
+            كأحد عناصر قرار الحماية إلى جانب صلاحية الإدارة،
+            والنظام المطلوب، ونوع العملية، وعدد السجلات،
+            والغرض من الوصول.
+        </p>
+
+        <p>
+            الإجراءات التي يعرضها «أثر» هي إجراءات تشغيلية
+            داخل النموذج الأكاديمي، وليست بديلًا عن الضوابط
+            النظامية المعتمدة لدى الجهة.
+        </p>
+
+    </section>
+
+
+</main>
+
+
+
+<script src="athar-core.js"></script>
+<script src="classification.js"></script>
+
+
+</body>
+</html>

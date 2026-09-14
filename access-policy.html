@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سياسة الوصول | أثر</title>
+    <meta name="description" content="سياسة الوصول التجريبية التي يستخدمها أثر للتحقق من صلاحية طلبات الوصول إلى البيانات الشخصية.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="policy-page">
+<header class="dashboard-navbar">
+    <a href="index.html" class="dashboard-brand"><img src="Pic/athar-logo.png" alt="شعار أثر"></a>
+    <div class="dashboard-title"><span>أثر</span><strong>سياسة الوصول</strong></div>
+    <a href="index.html" class="back-home">العودة إلى الرئيسية</a>
+</header>
+
+<main class="policy-main">
+    <section class="policy-heading">
+        <span class="section-label">سياسة الوصول</span>
+        <h1>تحديد من يحق له الوصول إلى كل نوع من البيانات</h1>
+        <p>تعرض هذه الصفحة القواعد التجريبية التي يستخدمها أثر عند فحص طلب الوصول. يجب أن يتوافق الطلب مع الإدارة والنظام ونوع البيانات والعملية قبل إتاحة المحتوى.</p>
+        <div class="policy-notice"><strong>تنبيه:</strong> القواعد والحدود الرقمية في هذا الإصدار مخصصة للنموذج الأكاديمي، وليست حدودًا نظامية رسمية أو بديلًا عن سياسة الجهة.</div>
+    </section>
+
+    <section class="policy-table-card">
+        <span class="section-label">القواعد الافتراضية</span>
+        <h2 class="policy-section-title">صلاحيات الإدارات داخل نموذج أثر</h2>
+        <div id="default-policy-grid" class="policy-cards-grid"></div>
+    </section>
+
+    <section class="breach-form-card policy-custom-card">
+        <span class="section-label">قاعدة مخصصة</span>
+        <h2>إضافة قاعدة وصول للتجربة</h2>
+        <p class="protection-intro">تتقدم القاعدة المخصصة على القاعدة الافتراضية عند تطابق الإدارة ونوع البيانات والعملية.</p>
+        <form id="custom-policy-form">
+            <div class="breach-form-grid">
+                <div class="breach-field">
+                    <label>الإدارة</label>
+                    <select name="department" required>
+                        <option>الموارد البشرية</option><option>المالية</option><option>التسويق</option><option>تقنية المعلومات</option><option>الخصوصية والالتزام</option><option>الصحة المهنية</option>
+                    </select>
+                </div>
+                <div class="breach-field">
+                    <label>نوع البيانات</label>
+                    <select name="dataType" required>
+                        <option>بيانات الموظفين</option><option>رقم الهوية</option><option>بيانات التواصل</option><option>بيانات مالية</option><option>بيانات العملاء</option><option>بيانات صحية</option><option>بيانات حيوية أو بيومترية</option><option>بيانات الموقع الجغرافي</option>
+                    </select>
+                </div>
+                <div class="breach-field">
+                    <label>العملية</label>
+                    <select name="action" required>
+                        <option value="VIEW">عرض</option><option value="UPDATE">تعديل</option><option value="DOWNLOAD">تنزيل</option><option value="EXPORT">تصدير</option><option value="DELETE">حذف</option>
+                    </select>
+                </div>
+                <div class="breach-field">
+                    <label>قرار القاعدة</label>
+                    <select name="decision" required>
+                        <option value="allowed">مسموح</option><option value="masked">مسموح مع إخفاء جزئي</option><option value="approval">يتطلب موافقة</option><option value="denied">مرفوض</option>
+                    </select>
+                </div>
+                <div class="breach-field breach-field-full">
+                    <label>الحد الأقصى لعدد السجلات قبل طلب موافقة</label>
+                    <input type="number" min="0" name="maxRecords" value="50">
+                </div>
+            </div>
+            <div class="protection-form-actions"><button type="submit" class="primary-btn">حفظ القاعدة</button></div>
+        </form>
+    </section>
+
+    <section class="policy-table-card">
+        <span class="section-label">القواعد المخصصة</span>
+        <h2 class="policy-section-title">القواعد المحفوظة في المتصفح</h2>
+        <div id="custom-policy-list" class="custom-policy-list"></div>
+    </section>
+</main>
+
+<script src="athar-core.js"></script>
+<script src="access-policy.js"></script>
+</body>
+</html>

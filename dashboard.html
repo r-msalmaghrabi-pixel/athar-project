@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>حماية البيانات الشخصية | أثر</title>
+
+    <meta
+        name="description"
+        content="خدمة أثر لفحص ملف بيانات حقيقي، واكتشاف البيانات الشخصية المحتملة، ثم تصنيفها وفحص طلب الوصول إليها."
+    >
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+
+<body class="dashboard-page">
+
+
+<header class="dashboard-navbar">
+
+    <a
+        href="index.html"
+        class="dashboard-brand"
+    >
+        <img
+            src="Pic/athar-logo.png"
+            alt="شعار أثر"
+        >
+    </a>
+
+
+    <div class="dashboard-heading-group">
+
+        <div class="dashboard-title">
+            <span>أثر</span>
+            <strong>حماية البيانات الشخصية</strong>
+        </div>
+
+        <span class="monitor-badge">
+            فحص محلي داخل المتصفح
+        </span>
+
+    </div>
+
+
+    <a
+        href="index.html"
+        class="back-home"
+    >
+        العودة إلى الرئيسية
+    </a>
+
+</header>
+
+
+
+<main class="dashboard-main protection-journey-main">
+
+
+    <!-- =========================================
+         عنوان الخدمة
+    ========================================== -->
+
+    <section class="dashboard-heading protection-service-heading">
+
+        <div>
+
+            <span class="section-label">
+                خدمة حماية البيانات الشخصية
+            </span>
+
+            <h1>
+                افحص البيانات قبل السماح بالوصول إليها
+            </h1>
+
+            <p>
+                ارفع ملف CSV فعليًا، وسيقوم أثر بقراءة أعمدته وقيمه
+                لاكتشاف الحقول التي يُحتمل أن تحتوي على بيانات شخصية.
+                بعد ذلك تحدد الجهة مستوى التصنيف المعتمد،
+                ثم يُفحص طلب الوصول وتظهر نتيجة الحماية.
+            </p>
+
+        </div>
+
+
+        <div class="personal-protection-scope">
+
+            <div>
+                <strong>اكتشاف البيانات الشخصية</strong>
+                <span>قراءة الملف وتحديد الحقول التي قد ترتبط بشخص.</span>
+            </div>
+
+            <div>
+                <strong>إخفاء البيانات</strong>
+                <span>عدم إظهار القيم الشخصية كاملة في المعاينة.</span>
+            </div>
+
+            <div>
+                <strong>التحكم في الوصول</strong>
+                <span>التحقق من المستخدم والإدارة والغرض والعملية المطلوبة.</span>
+            </div>
+
+            <div>
+                <strong>منع الاستخدام غير المصرح به</strong>
+                <span>السماح أو الإخفاء أو طلب الموافقة أو الحجب.</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <!-- =========================================
+         قائمة المستخدمين المخولين
+    ========================================== -->
+
+    <section class="authorized-users-section">
+
+        <div class="authorized-users-heading">
+
+            <span class="section-label">
+                قائمة المستخدمين المخولين
+            </span>
+
+            <h2>
+                من يملك صلاحية الوصول داخل النموذج؟
+            </h2>
+
+            <p>
+                هذه قائمة تجريبية بالأدوار المخولة في أثر.
+                وجود المستخدم في القائمة لا يعني السماح التلقائي؛
+                ما زال أثر يتحقق من مجال الملف والنظام والغرض والعملية
+                والتصنيف قبل إصدار قرار الوصول.
+            </p>
+
+        </div>
+
+
+        <div class="authorized-table-wrap">
+
+            <table class="authorized-users-table">
+
+                <thead>
+                    <tr>
+                        <th>معرف المستخدم</th>
+                        <th>الدور</th>
+                        <th>الإدارة</th>
+                        <th>مجال البيانات</th>
+                        <th>النظام</th>
+                        <th>نوع الصلاحية</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>U-HR-01</td>
+                        <td>أخصائي موارد بشرية</td>
+                        <td>الموارد البشرية</td>
+                        <td>بيانات الموظفين</td>
+                        <td>نظام الموارد البشرية / الرواتب</td>
+                        <td>عرض وتعديل، والتصدير يتطلب موافقة</td>
+                    </tr>
+
+                    <tr>
+                        <td>U-FIN-01</td>
+                        <td>محلل مالي</td>
+                        <td>المالية</td>
+                        <td>البيانات المالية</td>
+                        <td>النظام المالي / الرواتب</td>
+                        <td>عرض مع إخفاء وتعديل، والتصدير يتطلب موافقة</td>
+                    </tr>
+
+                    <tr>
+                        <td>U-CS-01</td>
+                        <td>موظف خدمة عملاء</td>
+                        <td>خدمة العملاء</td>
+                        <td>بيانات العملاء</td>
+                        <td>نظام إدارة علاقات العملاء</td>
+                        <td>عرض مع إخفاء وتعديل</td>
+                    </tr>
+
+                    <tr>
+                        <td>U-MKT-01</td>
+                        <td>أخصائي تسويق</td>
+                        <td>التسويق</td>
+                        <td>بيانات العملاء</td>
+                        <td>نظام إدارة علاقات العملاء</td>
+                        <td>عرض مع إخفاء وفق الغرض المسموح</td>
+                    </tr>
+
+                    <tr>
+                        <td>U-EDU-01</td>
+                        <td>موظف شؤون تعليمية</td>
+                        <td>الشؤون التعليمية</td>
+                        <td>البيانات التعليمية</td>
+                        <td>النظام التعليمي</td>
+                        <td>عرض وتعديل، والتصدير يتطلب موافقة</td>
+                    </tr>
+
+                    <tr>
+                        <td>U-HLT-01</td>
+                        <td>ممارس صحة مهنية</td>
+                        <td>الصحة المهنية</td>
+                        <td>البيانات الصحية</td>
+                        <td>النظام الصحي</td>
+                        <td>عرض مع إخفاء وتعديل، والتحميل يتطلب موافقة</td>
+                    </tr>
+
+                    <tr>
+                        <td>U-DPO-01</td>
+                        <td>مسؤول حماية البيانات</td>
+                        <td>الخصوصية والالتزام</td>
+                        <td>مراجعة جميع المجالات</td>
+                        <td>نظام حماية البيانات الشخصية</td>
+                        <td>مراجعة وطلب موافقة فقط، وليس وصولًا تشغيليًا مباشرًا</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <p class="authorized-users-note">
+            المعرفات والأدوار أعلاه نموذجية لأغراض المشروع الأكاديمي وليست بيانات أشخاص حقيقيين.
+        </p>
+
+    </section>
+
+
+    <!-- =========================================
+         خريطة الخطوات
+    ========================================== -->
+
+    <nav
+        class="protection-steps"
+        id="protection-steps"
+        aria-label="مراحل حماية البيانات الشخصية"
+    >
+
+        <div
+            class="protection-step active"
+            data-step="1"
+            aria-current="step"
+        >
+
+            <div class="step-circle">
+                <span class="step-number">1</span>
+                <span class="step-check">✓</span>
+            </div>
+
+            <div class="step-text">
+                <strong>رفع وفحص البيانات</strong>
+                <small>اكتشاف البيانات الشخصية المحتملة</small>
+            </div>
+
+        </div>
+
+
+        <div class="step-line"></div>
+
+
+        <div
+            class="protection-step"
+            data-step="2"
+        >
+
+            <div class="step-circle">
+                <span class="step-number">2</span>
+                <span class="step-check">✓</span>
+            </div>
+
+            <div class="step-text">
+                <strong>التصنيف وفحص الوصول</strong>
+                <small>تحديد التصنيف والتحقق من الطلب</small>
+            </div>
+
+        </div>
+
+
+        <div class="step-line"></div>
+
+
+        <div
+            class="protection-step"
+            data-step="3"
+        >
+
+            <div class="step-circle">
+                <span class="step-number">3</span>
+                <span class="step-check">✓</span>
+            </div>
+
+            <div class="step-text">
+                <strong>النتيجة</strong>
+                <small>قرار الحماية والإجراءات</small>
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =========================================
+         الخطوة 1: رفع الملف وفحصه
+    ========================================== -->
+
+    <section
+        id="protection-panel-1"
+        class="protection-step-panel"
+        data-panel="1"
+    >
+
+        <div class="journey-card">
+
+
+            <div class="journey-card-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        الخطوة الأولى
+                    </span>
+
+                    <h2>
+                        رفع ملف البيانات وفحص محتواه
+                    </h2>
+
+                    <p>
+                        اختر ملف CSV يحتوي على البيانات المراد حمايتها.
+                        تتم قراءة الملف محليًا داخل المتصفح في هذا النموذج،
+                        ثم تُفحص أسماء الأعمدة وأنماط القيم لاكتشاف
+                        البيانات الشخصية المحتملة.
+                    </p>
+
+                </div>
+
+
+                <div class="classification-reference-pill">
+                    CSV فقط
+                </div>
+
+            </div>
+
+
+
+            <div
+                id="personal-data-dropzone"
+                class="personal-data-dropzone"
+            >
+
+                <input
+                    id="personal-data-file"
+                    type="file"
+                    accept=".csv,text/csv"
+                    hidden
+                >
+
+                <div class="upload-zone-icon">
+                    ↑
+                </div>
+
+                <h3>
+                    ارفع ملف البيانات
+                </h3>
+
+                <p>
+                    اسحب ملف CSV هنا أو اختره من جهازك
+                </p>
+
+                <button
+                    type="button"
+                    id="choose-personal-data-file"
+                    class="primary-btn"
+                >
+                    اختيار ملف CSV
+                </button>
+
+                <small>
+                    لا يتم إرسال الملف إلى خادم في هذا النموذج؛ تتم المعالجة داخل المتصفح.
+                </small>
+
+            </div>
+
+
+
+            <div
+                id="file-analysis-loading"
+                class="file-analysis-loading"
+                hidden
+            >
+                جارٍ قراءة الملف وتحليل الحقول...
+            </div>
+
+
+
+            <section
+                id="file-analysis-result"
+                class="file-analysis-result"
+                hidden
+            >
+
+
+                <div class="file-analysis-summary">
+
+                    <div>
+                        <span>اسم الملف</span>
+                        <strong id="analysis-file-name">—</strong>
+                    </div>
+
+                    <div>
+                        <span>عدد السجلات</span>
+                        <strong id="analysis-row-count">0</strong>
+                    </div>
+
+                    <div>
+                        <span>عدد الأعمدة</span>
+                        <strong id="analysis-column-count">0</strong>
+                    </div>
+
+                    <div>
+                        <span>حقول شخصية محتملة</span>
+                        <strong id="analysis-personal-count">0</strong>
+                    </div>
+
+                </div>
+
+
+
+                <div
+                    id="personal-data-detection-status"
+                    class="personal-data-detection-status"
+                ></div>
+
+
+
+                <div
+                    id="detected-fields-section"
+                    class="detected-fields-section"
+                >
+
+                    <div class="detected-section-head">
+
+                        <div>
+                            <span class="section-label">
+                                نتيجة الفحص
+                            </span>
+
+                            <h3>
+                                الحقول التي اكتشفها أثر
+                            </h3>
+                        </div>
+
+                        <span
+                            id="detected-types-badge"
+                            class="protection-badge protection-tone-info"
+                        >
+                            —
+                        </span>
+
+                    </div>
+
+
+                    <div
+                        id="detected-fields-list"
+                        class="detected-fields-list"
+                    ></div>
+
+                </div>
+
+
+
+                <div class="uploaded-preview-section">
+
+                    <div class="detected-section-head">
+
+                        <div>
+                            <span class="section-label">
+                                معاينة آمنة
+                            </span>
+
+                            <h3>
+                                عينة من الملف بعد إخفاء القيم الشخصية
+                            </h3>
+                        </div>
+
+                    </div>
+
+
+                    <div class="uploaded-preview-wrap">
+
+                        <table
+                            id="uploaded-preview-table"
+                            class="uploaded-preview-table"
+                        ></table>
+
+                    </div>
+
+                </div>
+
+
+
+                <p class="classification-policy-note">
+                    الاكتشاف آلي ومساعد فقط، ويعتمد على أسماء الأعمدة وأنماط القيم.
+                    لا يُعد حكمًا قانونيًا نهائيًا على طبيعة البيانات.
+                </p>
+
+
+                <p
+                    id="file-analysis-validation"
+                    class="journey-validation"
+                    role="alert"
+                ></p>
+
+
+                <div class="journey-actions">
+
+                    <button
+                        type="button"
+                        id="replace-file"
+                        class="secondary-btn"
+                    >
+                        اختيار ملف آخر
+                    </button>
+
+                    <button
+                        type="button"
+                        id="continue-to-protection"
+                        class="primary-btn"
+                    >
+                        التالي: التصنيف وفحص الوصول
+                    </button>
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         الخطوة 2: التصنيف + فحص الوصول
+    ========================================== -->
+
+    <section
+        id="protection-panel-2"
+        class="protection-step-panel"
+        data-panel="2"
+        hidden
+    >
+
+
+        <div class="journey-selection-summary">
+
+            <div class="journey-file-summary-main">
+
+                <span>الملف الجاري حمايته</span>
+
+                <strong id="selected-file-name">
+                    —
+                </strong>
+
+            </div>
+
+            <div>
+                <span>السجلات</span>
+                <strong id="selected-row-count">0</strong>
+            </div>
+
+            <div>
+                <span>مجال الملف المكتشف</span>
+                <strong id="selected-file-domain">—</strong>
+            </div>
+
+            <button
+                type="button"
+                id="change-file"
+                class="journey-text-button"
+            >
+                تغيير الملف
+            </button>
+
+        </div>
+
+
+
+        <div class="journey-card classification-access-card">
+
+
+            <div class="journey-card-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        الخطوة الثانية
+                    </span>
+
+                    <h2>
+                        حدد التصنيف المعتمد ثم افحص طلب الوصول
+                    </h2>
+
+                    <p>
+                        أثر اكتشف البيانات الشخصية المحتملة من الملف،
+                        لكن مستوى التصنيف لا يحدده النظام تلقائيًا.
+                        اختر المستوى المعتمد لدى الجهة، ثم أدخل بيانات الشخص
+                        الذي يريد الوصول إلى الملف.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- التصنيف -->
+
+            <div class="inline-step-block">
+
+                <div class="inline-step-title">
+                    <span>أ</span>
+
+                    <div>
+                        <strong>مستوى تصنيف البيانات الشخصية</strong>
+                        <small>وفق التصنيف المعتمد للبيانات لدى الجهة</small>
+                    </div>
+                </div>
+
+
+                <div class="classification-levels-grid">
+
+
+                    <label class="classification-choice">
+
+                        <input
+                            type="radio"
+                            name="dataClassification"
+                            value="top-secret"
+                        >
+
+                        <span class="classification-choice-content">
+
+                            <span class="classification-choice-top">
+                                <strong>سري للغاية</strong>
+
+                                <span class="classification-impact-badge impact-critical">
+                                    أثر بالغ
+                                </span>
+                            </span>
+
+                            <span class="classification-choice-description">
+                                قد يؤدي الإفصاح غير المصرح به إلى ضرر بالغ
+                                يمس الدولة أو مصالحها أو أمنها أو سمعتها.
+                            </span>
+
+                        </span>
+
+                    </label>
+
+
+
+                    <label class="classification-choice">
+
+                        <input
+                            type="radio"
+                            name="dataClassification"
+                            value="secret"
+                        >
+
+                        <span class="classification-choice-content">
+
+                            <span class="classification-choice-top">
+                                <strong>سري</strong>
+
+                                <span class="classification-impact-badge impact-high">
+                                    أثر كبير
+                                </span>
+                            </span>
+
+                            <span class="classification-choice-description">
+                                قد يؤدي الإفصاح غير المصرح به إلى ضرر كبير
+                                على الجهة أو أعمالها أو مشاريعها أو مصالحها.
+                            </span>
+
+                        </span>
+
+                    </label>
+
+
+
+                    <label class="classification-choice">
+
+                        <input
+                            type="radio"
+                            name="dataClassification"
+                            value="restricted"
+                        >
+
+                        <span class="classification-choice-content">
+
+                            <span class="classification-choice-top">
+                                <strong>مقيد</strong>
+
+                                <span class="classification-impact-badge impact-restricted">
+                                    إتاحة محدودة
+                                </span>
+                            </span>
+
+                            <span class="classification-choice-description">
+                                بيانات غير متاحة للعامة ويقتصر الاطلاع عليها
+                                على فئات محددة وفق الصلاحية والغرض.
+                            </span>
+
+                        </span>
+
+                    </label>
+
+
+
+                    <label class="classification-choice">
+
+                        <input
+                            type="radio"
+                            name="dataClassification"
+                            value="public"
+                        >
+
+                        <span class="classification-choice-content">
+
+                            <span class="classification-choice-top">
+                                <strong>عام</strong>
+
+                                <span class="classification-impact-badge impact-public">
+                                    متاح للنشر
+                                </span>
+                            </span>
+
+                            <span class="classification-choice-description">
+                                بيانات اعتمدت الجهة إتاحتها أو نشرها للعامة.
+                            </span>
+
+                        </span>
+
+                    </label>
+
+
+                </div>
+
+
+                <p
+                    id="classification-validation"
+                    class="journey-validation"
+                    role="alert"
+                ></p>
+
+            </div>
+
+
+
+            <!-- طلب الوصول -->
+
+            <div class="inline-step-divider"></div>
+
+
+            <div class="inline-step-block">
+
+                <div class="inline-step-title">
+
+                    <span>ب</span>
+
+                    <div>
+                        <strong>بيانات طلب الوصول</strong>
+                        <small>من يريد الوصول؟ وهل إدارته مرتبطة بمجال الملف؟ وما العملية المطلوبة؟</small>
+                    </div>
+
+                </div>
+
+
+                <div class="detected-context-box">
+
+                    <span>
+                        مجال الملف الذي سيُطبق عليه فحص الصلاحية:
+                    </span>
+
+                    <strong id="access-file-domain">
+                        —
+                    </strong>
+
+                    <small id="access-detected-fields">
+                        —
+                    </small>
+
+                </div>
+
+
+
+                <form id="access-request-form">
+
+
+                    <div class="breach-form-grid">
+
+
+                        <div class="breach-field">
+
+                            <label for="user-id">
+                                معرف المستخدم
+                            </label>
+
+                            <input
+                                id="user-id"
+                                name="userId"
+                                type="text"
+                                value="U101"
+                                required
+                            >
+
+                        </div>
+
+
+
+                        <div class="breach-field">
+
+                            <label for="department">
+                                الإدارة
+                            </label>
+
+                            <select
+                                id="department"
+                                name="department"
+                                required
+                            >
+                                <option>الموارد البشرية</option>
+                                <option>المالية</option>
+                                <option>التسويق</option>
+                                <option>خدمة العملاء</option>
+                                <option>الشؤون التعليمية</option>
+                                <option>تقنية المعلومات</option>
+                                <option>الخصوصية والالتزام</option>
+                                <option>الصحة المهنية</option>
+                            </select>
+
+                        </div>
+
+
+
+                        <div class="breach-field">
+
+                            <label for="system">
+                                النظام الذي ستُعرض من خلاله البيانات
+                            </label>
+
+                            <select
+                                id="system"
+                                name="system"
+                                required
+                            >
+                                <option value="HR_System">نظام الموارد البشرية</option>
+                                <option value="Payroll_System">نظام الرواتب</option>
+                                <option value="Finance_System">النظام المالي</option>
+                                <option value="CRM_System">نظام إدارة علاقات العملاء</option>
+                                <option value="Student_System">النظام التعليمي</option>
+                                <option value="Health_System">النظام الصحي</option>
+                                <option value="DPO_System">نظام حماية البيانات الشخصية</option>
+                                <option value="Admin_System">النظام الإداري</option>
+                            </select>
+
+                        </div>
+
+
+
+                        <div class="breach-field">
+
+                            <label for="action">
+                                العملية المطلوبة على الملف
+                            </label>
+
+                            <select
+                                id="action"
+                                name="action"
+                                required
+                            >
+                                <option value="VIEW">عرض</option>
+                                <option value="UPDATE">تعديل</option>
+                                <option value="DOWNLOAD">تنزيل</option>
+                                <option value="EXPORT">تصدير</option>
+                                <option value="DELETE">حذف</option>
+                            </select>
+
+                        </div>
+
+
+
+                        <div class="breach-field">
+
+                            <label for="record-count">
+                                عدد السجلات في الملف
+                            </label>
+
+                            <input
+                                id="record-count"
+                                name="recordCount"
+                                type="number"
+                                min="1"
+                                readonly
+                                required
+                            >
+
+                        </div>
+
+
+
+                        <div class="breach-field breach-field-full">
+
+                            <label for="purpose">
+                                غرض الوصول
+                            </label>
+
+                            <textarea
+                                id="purpose"
+                                name="purpose"
+                                rows="3"
+                                required
+                                placeholder="مثال: مراجعة بيانات الموظفين ضمن إجراء إداري معتمد."
+                            ></textarea>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="journey-actions">
+
+                        <button
+                            type="button"
+                            id="back-to-file"
+                            class="secondary-btn"
+                        >
+                            السابق
+                        </button>
+
+                        <button
+                            type="submit"
+                            class="primary-btn"
+                        >
+                            تنفيذ فحص الحماية
+                        </button>
+
+                    </div>
+
+
+                </form>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         الخطوة 3: النتيجة
+    ========================================== -->
+
+    <section
+        id="protection-panel-3"
+        class="protection-step-panel"
+        data-panel="3"
+        hidden
+    >
+
+        <section class="protection-result-section journey-card">
+
+            <div class="result-step-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        الخطوة الثالثة
+                    </span>
+
+                    <h2>
+                        نتيجة حماية الملف
+                    </h2>
+
+                    <p>
+                        القرار التالي مبني على الملف الذي رُفع فعليًا،
+                        والبيانات الشخصية التي اكتشفها أثر،
+                        والتصنيف الذي حددته، وبيانات طلب الوصول.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div
+                id="decision-empty"
+                class="dashboard-empty-state compact-empty"
+            >
+
+                <div class="empty-state-icon">
+                    ◌
+                </div>
+
+                <h2>
+                    لم يُفحص طلب حتى الآن
+                </h2>
+
+            </div>
+
+
+            <div
+                id="decision-result"
+                hidden
+            ></div>
+
+
+            <div class="journey-actions result-actions">
+
+                <button
+                    type="button"
+                    id="back-to-request"
+                    class="secondary-btn"
+                >
+                    تعديل الطلب
+                </button>
+
+                <button
+                    type="button"
+                    id="start-new-check"
+                    class="primary-btn"
+                >
+                    فحص ملف جديد
+                </button>
+
+            </div>
+
+        </section>
+
+    </section>
+
+
+</main>
+
+
+
+<script src="athar-core.js"></script>
+<script src="script.js"></script>
+
+
+</body>
+</html>

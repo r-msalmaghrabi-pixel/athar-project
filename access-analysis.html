@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحليل سجلات الوصول | أثر</title>
+    <meta name="description" content="مراجعة سجلات الوصول إلى البيانات الشخصية ورصد الأنشطة التي تستدعي المراجعة داخل نموذج أثر.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-page">
+<header class="dashboard-navbar">
+    <a href="index.html" class="dashboard-brand"><img src="Pic/athar-logo.png" alt="شعار أثر"></a>
+    <div class="dashboard-heading-group">
+        <div class="dashboard-title"><span>أثر</span><strong>تحليل سجلات الوصول</strong></div>
+        <span class="monitor-badge" title="التحليل تجريبي ويعمل داخل المتصفح">تحليل ومراجعة</span>
+    </div>
+    <a href="dashboard.html" class="back-home">العودة إلى حماية البيانات الشخصية</a>
+</header>
+
+<main class="dashboard-main">
+    <section class="dashboard-heading">
+        <div>
+            <span class="section-label">المراقبة بعد الوصول</span>
+            <h1>مراجعة سجلات الوصول إلى البيانات الشخصية</h1>
+            <p>تُستخدم هذه الصفحة بعد حدوث الوصول إلى البيانات الشخصية. ارفع سجل عمليات الوصول ليحلل «أثر» من وصل إلى البيانات، ومتى، ومن أي إدارة ونظام، ويحدد الأنشطة التي تستدعي المراجعة.</p>
+        </div>
+        <a href="reviews.html" class="secondary-btn">عرض سجل الحماية</a>
+    </section>
+
+    <section class="about-project-card analysis-purpose-card">
+        <span class="section-label">دور هذه الصفحة</span>
+        <h2>مراجعة ما حدث بعد الوصول</h2>
+        <p>تتخذ خدمة «حماية البيانات الشخصية» قرار السماح أو الحجب قبل إتاحة البيانات، بينما تراجع هذه الصفحة سجل العمليات بعد حدوثها لاكتشاف وصول غير معتاد، مثل زيادة كبيرة في عدد السجلات أو استخدام نظام أو نوع بيانات غير مألوف أو تنفيذ الوصول في وقت غير معتاد.</p>
+    </section>
+
+    <section class="monitor-source">
+        <div class="source-icon">↑</div>
+        <span class="section-label">ملف سجل الوصول</span>
+        <h2>رفع سجل عمليات الوصول</h2>
+        <p>ارفع ملف سجل عمليات الوصول بصيغة CSV. سيقارن «أثر» أحدث يوم في السجل بالنمط التاريخي خلال الثلاثين يومًا السابقة، ثم يحدد العمليات التي تحتاج إلى مراجعة.</p>
+        <label for="activity-file" class="upload-activity-btn">اختيار سجل الوصول CSV</label>
+        <input type="file" id="activity-file" accept=".csv" hidden>
+        <small>
+            هذا الملف ليس ملف البيانات الشخصية نفسه، بل سجل يصف عمليات الوصول التي حدثت عليها.<br>
+            الأعمدة المطلوبة: timestamp, user_id, department, system, data_type, action, record_count
+        </small>
+        <p id="csv-message" class="validation-message"></p>
+    </section>
+
+    <section id="analysis-results" class="analysis-results" hidden></section>
+</main>
+
+<script src="athar-core.js"></script>
+<script src="access-analysis.js"></script>
+</body>
+</html>
