@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سجل الحماية | أثر</title>
+    <meta name="description" content="سجل قرارات الحماية والحالات التي تستدعي مراجعة في نموذج أثر.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="reviews-page">
+<header class="dashboard-navbar">
+    <a href="index.html" class="dashboard-brand"><img src="Pic/athar-logo.png" alt="شعار أثر"></a>
+    <div class="dashboard-title"><span>أثر</span><strong>سجل الحماية</strong></div>
+    <a href="index.html" class="back-home">العودة إلى الرئيسية</a>
+</header>
+
+<main class="reviews-main">
+    <section class="reviews-heading">
+        <span class="section-label">سجل الحماية</span>
+        <h1>قرارات الوصول والحالات التي تستدعي المراجعة</h1>
+        <p>يعرض السجل القرارات الناتجة عن فحص الطلبات اليدوية وتحليل ملفات النشاط، مع إمكانية فتح تفاصيل كل حالة.</p>
+    </section>
+
+    <section class="reviews-summary">
+        <div class="review-summary-card"><span>إجمالي القرارات</span><strong id="stat-log">0</strong></div>
+        <div class="review-summary-card"><span>طلبات مرفوضة</span><strong id="stat-denied">0</strong></div>
+        <div class="review-summary-card"><span>حالات مرصودة</span><strong id="stat-cases">0</strong></div>
+        <div class="review-summary-card"><span>حوادث مسجلة</span><strong id="stat-incidents">0</strong></div>
+    </section>
+
+    <section class="review-filters protection-filters">
+        <div class="breach-field"><label for="decision-filter">قرار الحماية</label><select id="decision-filter"><option value="all">جميع القرارات</option><option value="allowed">مسموح</option><option value="masked">مسموح مع إخفاء جزئي</option><option value="approval">يتطلب موافقة</option><option value="denied">مرفوض</option></select></div>
+        <div class="breach-field"><label for="log-search">بحث</label><input id="log-search" type="search" placeholder="المستخدم أو الإدارة أو نوع البيانات"></div>
+        <button id="clear-log" type="button" class="secondary-btn compact-button">مسح سجل القرارات</button>
+    </section>
+
+    <section class="reviews-table-card">
+        <span class="section-label">قرارات الوصول</span>
+        <h2 class="policy-section-title">السجل الموثق داخل المتصفح</h2>
+        <div id="protection-log"></div>
+    </section>
+
+    <section class="reviews-table-card">
+        <span class="section-label">التحليل السلوكي</span>
+        <h2 class="policy-section-title">الحالات المرصودة من ملفات النشاط</h2>
+        <div id="detected-cases"></div>
+    </section>
+</main>
+
+<script src="athar-core.js"></script>
+<script src="reviews.js"></script>
+</body>
+</html>
